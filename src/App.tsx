@@ -1,10 +1,10 @@
-import LiqPayWidget from 'components/LiqPayWidget';
+import HomePage from 'pages/HomePage';
 
 function App() {
   console.log(process.env.NODE_ENV);
   return (
-    <div>
-      <LiqPayWidget />
+    <div className='light-theme'>
+      <HomePage />
     </div>
   );
 }
