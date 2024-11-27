@@ -1,0 +1,15 @@
+@import 'src/styles/_variables.scss';
+
+.author {
+  &-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    gap: $gap-s;
+
+    @media screen and (max-width: $mediumSize) {
+      grid-template-columns: 1fr;
+      
+    }
+  }
+}

@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import SuccessPage from 'pages/SuccessPage';
+import SuccessPage from 'pages/success/SuccessPage';
 
 const router = createBrowserRouter([
   {

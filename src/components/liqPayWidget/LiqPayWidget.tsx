@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { PRIVATE_KEY, generateLiqPaySignature, base64Data } from './utils';
+import { PRIVATE_KEY, generateLiqPaySignature, base64Data } from '../utils';
 
 const LiqPayWidget = () => {
   const [data, setData] = useState({ data: '', signature: '' });
@@ -15,7 +15,7 @@ const LiqPayWidget = () => {
 
   return (
     <div>
-      <button onClick={getPayment}>Get Data</button>
+      <button onClick={getPayment}>ОТРИМАТИ КУРС</button>
       {data.data && data.signature && (
         <form
           method='POST'
