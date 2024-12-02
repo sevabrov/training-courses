@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import SuccessPage from 'pages/success/SuccessPage';
+import Policy from 'pages/policy/Policy';
+import Oferta from 'pages/oferta/Oferta';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: '/success',
     element: <SuccessPage />,
+  },
+  {
+    path: '/privacy-policy',
+    element: <Policy />,
+  },
+  {
+    path: '/oferta',
+    element: <Oferta />,
   },
 ]);
 

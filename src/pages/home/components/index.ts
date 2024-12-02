@@ -5,4 +5,4 @@ export { PreviewCourseBlock } from './PreviewCourseBlock';
 export { BeforeAfterBlock } from './BeforeAfterBlock';
 export { ReviewBlock } from './ReviewBlock';
 export { FaqBlock } from './FaqBlock';
-export { FooterBlock } from './FooterBlock';
+export { FooterBlock } from './footerBlock/FooterBlock';
