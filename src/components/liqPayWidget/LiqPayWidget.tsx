@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './index.scss';
 
 import { PRIVATE_KEY, generateLiqPaySignature, base64Data } from '../utils';
 
@@ -14,8 +15,18 @@ const LiqPayWidget = () => {
   };
 
   return (
-    <div>
-      <button onClick={getPayment}>ОТРИМАТИ КУРС</button>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '20px',
+        marginBottom: '20px',
+      }}
+    >
+      <button className='LiqPayButton' onClick={getPayment}>
+        ОТРИМАТИ КУРС
+      </button>
       {data.data && data.signature && (
         <form
           method='POST'
@@ -25,7 +36,7 @@ const LiqPayWidget = () => {
         >
           <input type='hidden' name='data' value={data.data} />
           <input type='hidden' name='signature' value={data.signature} />
-          <button>Pay</button>
+          <button className='LiqPayButton'>Купити зараз</button>
         </form>
       )}
     </div>

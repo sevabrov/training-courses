@@ -7,23 +7,33 @@ export const MainBlock = () => {
       <div className='content-main'>
         <div style={{ textAlign: 'center' }}>
           <Typography color='light'>
-            Онлайн-курс від зіркового тренера з йоги Ольги Острікової
+            Онлайн-курс від Броварної Євгенії
           </Typography>
           <Typography color='primary' variant='h1'>
-            HARMONY YOGA:
+            ЧЕКЛИСТ
           </Typography>
           <Typography color='primary' variant='h2'>
-            з любов'ю до жінки
+            Базовий догляд за рослинами для новачків
           </Typography>
           <Typography color='light'>
-            Комплекс тренувань для <span>покращення</span> та{' '}
-            <span>стабілізації жіночого гормонального фону</span>
+            Покрокова інструкція по <span>правильному</span> догляду за
+            домашніми рослинами
           </Typography>
         </div>
-        <LiqPayWidget />
-        <Typography color='light'>
-          <span>лише 347 грн</span> 1290 грн
-        </Typography>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginTop: '40px',
+          }}
+        >
+          <LiqPayWidget />
+          <Typography color='light'>
+            <span>лише 99 грн</span>
+            {/* 599 грн */}
+          </Typography>
+        </div>
       </div>
     </div>
   );

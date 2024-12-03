@@ -34,7 +34,7 @@ export const initialPayload: PayloadType = {
   public_key: PUBLIC_KEY,
   version: 3,
   action: 'pay',
-  amount: 1,
+  amount: 99,
   currency: 'UAH',
   description: 'Оплата від',
   order_id: 'order_id_' + Math.random().toString(36).substring(7),

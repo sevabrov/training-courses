@@ -11,13 +11,13 @@
   &-main {
     max-width: $maxWidth;
     margin: 0 auto;
-    padding: $gap-s;
+    padding: $gap-s*2;
   }
   &-block {
     min-height: 200px;
     width: 100%;
     &:nth-child(even) {
-      background-color: pink;;
+      background-color: #2f6627;
       color: #000;
     }
   }
