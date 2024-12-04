@@ -36,7 +36,7 @@ export const initialPayload: PayloadType = {
   action: 'pay',
   amount: 99,
   currency: 'UAH',
-  description: 'Оплата від',
+  description: 'Оплата згідно КВЕД 63.99 ',
   order_id: 'order_id_' + Math.random().toString(36).substring(7),
   //TODO:Need to change for real project URL
   // result_url: 'http://localhost:3000/success',

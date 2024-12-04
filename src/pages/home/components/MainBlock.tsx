@@ -30,7 +30,7 @@ export const MainBlock = () => {
         >
           <LiqPayWidget />
           <Typography color='light'>
-            <span>лише 99 грн</span>
+            <span>лише за 99 гринень</span>
             {/* 599 грн */}
           </Typography>
         </div>
