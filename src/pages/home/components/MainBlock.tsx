@@ -1,5 +1,6 @@
 import { Typography } from 'components';
 import LiqPayWidget from 'components/liqPayWidget/LiqPayWidget';
+import WayForPayWidget from 'components/wayForPayWidget/WayForPayWidget';
 
 export const MainBlock = () => {
   return (
@@ -29,6 +30,7 @@ export const MainBlock = () => {
           }}
         >
           <LiqPayWidget />
+          <WayForPayWidget />
           <Typography color='light'>
             <span>лише за 99 гринень</span>
             {/* 599 грн */}
