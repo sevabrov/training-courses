@@ -1,8 +1,16 @@
 import { Typography } from 'components';
-import LiqPayWidget from 'components/liqPayWidget/LiqPayWidget';
-import WayForPayWidget from 'components/wayForPayWidget/WayForPayWidget';
+import ModalBasic from 'components/modal/Modal';
+import { useState } from 'react';
+import Modal from 'react-modal';
+
+// Set the root element for accessibility
+Modal.setAppElement('#root');
 
 export const MainBlock = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const getPayment = async () => {
+    setModalIsOpen(true);
+  };
   return (
     <div className='content-block'>
       <div className='content-main'>
@@ -29,14 +37,27 @@ export const MainBlock = () => {
             marginTop: '40px',
           }}
         >
-          <LiqPayWidget />
-          <WayForPayWidget />
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '20px',
+              marginBottom: '20px',
+            }}
+          >
+            <button className='LiqPayButton' onClick={getPayment}>
+              ОТРИМАТИ ГАЙД
+            </button>
+          </div>
+          {/* <WayForPayWidget productName='Курси Zeleno House' productPrice={1} /> */}
           <Typography color='light'>
             <span>лише за 99 гринень</span>
             {/* 599 грн */}
           </Typography>
         </div>
       </div>
+      <ModalBasic modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
     </div>
   );
 };
