@@ -1,8 +1,10 @@
 import WayForPayWidget from 'components/wayForPayWidget/WayForPayWidget';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import PhoneInput from 'react-phone-number-input';
 import { useState } from 'react';
 import { FormContentDataItem, FormProps } from './type';
 import { errorValidation, formContentData, initialValues } from './helper';
+import 'react-phone-number-input/style.css';
 
 const FormBasic = () => {
   const [data, setData] = useState<FormProps | null>(null);
@@ -22,7 +24,7 @@ const FormBasic = () => {
             }, 400);
           }}
         >
-          {({ isSubmitting }) => (
+          {({ isSubmitting, setFieldValue }) => (
             <Form>
               {formContentData.map((item: FormContentDataItem) => (
                 <div key={item.fieldName}>
@@ -30,6 +32,15 @@ const FormBasic = () => {
                   <ErrorMessage name={item.fieldName} component='div' />
                 </div>
               ))}
+              <PhoneInput
+                id='phoneNumber'
+                name='phoneNumber'
+                value={initialValues.phoneNumber}
+                onChange={(value) => setFieldValue('phoneNumber', value)}
+                defaultCountry='UA'
+                international
+              />
+              <ErrorMessage name={'phoneNumber'} component='div' />
               <button type='submit' disabled={isSubmitting}>
                 Перейти до оплати
               </button>

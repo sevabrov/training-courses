@@ -1,15 +1,15 @@
 @import 'src/styles/_variables.scss';
 
-.course {
+.preview {
   &-block {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     justify-content: space-evenly;
     gap: $gap-s;
-  
-    img {
-      max-height: 210px;
+    @media screen and (min-width: $maxWidth) {
+      grid-template-columns: repeat(3, 1fr);
     }
+    
   }
   &-item {
     display: flex;

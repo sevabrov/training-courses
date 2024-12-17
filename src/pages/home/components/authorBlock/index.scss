@@ -7,7 +7,7 @@
     justify-content: space-evenly;
     gap: $gap-s;
 
-    @media screen and (max-width: $mediumSize) {
+    @media screen and (max-width: $mediumWidth) {
       grid-template-columns: 1fr;
       
     }

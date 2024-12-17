@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #2f2929;
-    color: #fff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(14, 85, 41, 1) 100%);
+    
   }
   &-main {
     max-width: $maxWidth;
@@ -14,12 +14,7 @@
     padding: $gap-s*2;
   }
   &-block {
-    min-height: 200px;
     width: 100%;
-    &:nth-child(even) {
-      background-color: #2f6627;
-      color: #000;
-    }
   }
   
 }

@@ -2,10 +2,9 @@ import {
   MainBlock,
   CourseForBlock,
   AuthorBlock,
-  // PreviewCourseBlock,
-  // BeforeAfterBlock,
-  // ReviewBlock,
-  // FaqBlock,
+  PreviewCourseBlock,
+  FeedbackBlock,
+  FaqBlock,
   FooterBlock,
 } from './components';
 import './index.scss';
@@ -16,10 +15,9 @@ const HomePage = () => {
       <MainBlock />
       <CourseForBlock />
       <AuthorBlock />
-      {/* <PreviewCourseBlock />
-      <BeforeAfterBlock />
-      <ReviewBlock />
-      <FaqBlock /> */}
+      <PreviewCourseBlock />
+      <FeedbackBlock />
+      <FaqBlock />
       <FooterBlock />
     </div>
   );

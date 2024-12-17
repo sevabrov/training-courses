@@ -1,24 +1,21 @@
-import watering from 'assets/watering.avif';
-import graviy from 'assets/graviy.jpg';
-import plants from 'assets/plants.jpg';
-import './index.scss';
 import { Typography } from 'components';
+import './index.scss';
 
 export const CourseForBlock = () => {
   const coursesData = [
     {
-      img: plants,
-      title: 'Вибрати правильне місце для рослин',
+      img: '',
+      title: 'Для тих, хто хоче зменшити рівень стресу.',
       desc: '',
     },
     {
-      img: graviy,
-      title: 'Як підібрати Дренаж',
+      img: '',
+      title: 'Для тих, хто мріє навчитися доглядати за кімнатними рослинами.',
       desc: '',
     },
     {
-      img: watering,
-      title: 'На що треба звернути увагу під час Поливу',
+      img: '',
+      title: 'Для всіх, хто хоче створити вдома зелений куточок затишку.',
       desc: '',
     },
   ];
@@ -33,10 +30,7 @@ export const CourseForBlock = () => {
         }}
       >
         <Typography variant='h2' color='light' bold>
-          Короткий опис Гайду
-        </Typography>
-        <Typography variant='body' color='light' bold>
-          В цьому гайді ви дізнаєтесь про те як:
+          Для кого цей курс?
         </Typography>
       </div>
       <div className='content-main course-block'>

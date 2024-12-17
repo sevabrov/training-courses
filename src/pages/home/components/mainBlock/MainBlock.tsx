@@ -2,6 +2,8 @@ import { Typography } from 'components';
 import ModalBasic from 'components/modal/Modal';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import './index.scss';
+import Timer from 'components/timer/Timer';
 
 // Set the root element for accessibility
 Modal.setAppElement('#root');
@@ -12,21 +14,18 @@ export const MainBlock = () => {
     setModalIsOpen(true);
   };
   return (
-    <div className='content-block'>
+    <div className='content-block main-block'>
       <div className='content-main'>
         <div style={{ textAlign: 'center' }}>
           <Typography color='light'>
             Онлайн-курс від Броварної Євгенії
           </Typography>
           <Typography color='primary' variant='h1'>
-            ЧЕКЛИСТ
+            Кімнатні рослини як антистрес
           </Typography>
           <Typography color='primary' variant='h2'>
-            Базовий догляд за рослинами для новачків
-          </Typography>
-          <Typography color='light'>
-            Покрокова інструкція по <span>правильному</span> догляду за
-            домашніми рослинами
+            Навчися доглядати за рослинами та створювати гармонію в житті всього
+            за 5 днів!
           </Typography>
         </div>
         <div
@@ -47,15 +46,16 @@ export const MainBlock = () => {
             }}
           >
             <button className='LiqPayButton' onClick={getPayment}>
-              ОТРИМАТИ ГАЙД
+              Придбати курс
             </button>
           </div>
-          {/* <WayForPayWidget productName='Курси Zeleno House' productPrice={1} /> */}
-          <Typography color='light'>
-            <span>лише за 99 гринень</span>
-            {/* 599 грн */}
+
+          <Typography color='dark'>
+            <span>299 грн замість&nbsp;</span>
+            <span style={{ textDecoration: 'line-through' }}>2499 грн</span>
           </Typography>
         </div>
+        <Timer />
       </div>
       <ModalBasic modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
     </div>
