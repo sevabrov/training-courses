@@ -1,24 +1,23 @@
 import {
-  MainBlock,
-  CourseForBlock,
-  AuthorBlock,
-  PreviewCourseBlock,
-  FeedbackBlock,
-  FaqBlock,
-  FooterBlock,
+  ContactForm,
+  ForWhomSection,
+  MainSection,
+  ProgramSection,
+  VideoSection,
+  FeedbacSection,
+  FooterSection,
 } from './components';
-import './index.scss';
 
 const HomePage = () => {
   return (
-    <div className='content-wrapper'>
-      <MainBlock />
-      <CourseForBlock />
-      <AuthorBlock />
-      <PreviewCourseBlock />
-      <FeedbackBlock />
-      <FaqBlock />
-      <FooterBlock />
+    <div>
+      <MainSection />
+      <VideoSection />
+      <ForWhomSection />
+      <ProgramSection />
+      <ContactForm />
+      <FeedbacSection />
+      <FooterSection />
     </div>
   );
 };

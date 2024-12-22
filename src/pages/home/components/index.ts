@@ -1,7 +1,7 @@
-export { MainBlock } from './mainBlock/MainBlock';
-export { CourseForBlock } from './courseForBlock/CourseForBlock';
-export { AuthorBlock } from './authorBlock/AuthorBlock';
-export { PreviewCourseBlock } from './previewCourseBlock/PreviewCourseBlock';
-export { FeedbackBlock } from './feedbackBlock/FeedbackBlock';
-export { FaqBlock } from './faqBlock/FaqBlock';
-export { FooterBlock } from './footerBlock/FooterBlock';
+export { default as MainSection } from './mainSection/MainSection';
+export { default as VideoSection } from './videoSection/VideoSection';
+export { default as ForWhomSection } from './forWhomSection/ForWhomSection';
+export { default as ProgramSection } from './programSection/ProgramSection';
+export { default as ContactForm } from './contactForm/ContactForm';
+export { default as FeedbacSection } from './feedbacSection/FeedbacSection';
+export { default as FooterSection } from './footerSection/FooterSection';

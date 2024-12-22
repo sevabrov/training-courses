@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import './index-allStyles.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
