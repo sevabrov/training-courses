@@ -1,26 +1,16 @@
 import iconInsta from 'assets/flowers/icon_insta.svg';
+import './index.scss';
 
 const FooterSection = () => {
   return (
-    <footer className='Footer_footer__Q5T55'>
+    <footer className='Footer_footer'>
       <div className='container'>
         <span>
           © Copyright 2023{' '}
           <a href='https://empiria-studio.com'>Empiria Studio</a> - усі права
           захищено
         </span>
-        <ul className=''>
-          <li>
-            <a href='/#author'>про мене</a>
-          </li>
-          <li>
-            <a href='/#curse'>курс</a>
-          </li>
-          <li>
-            <a href='/#contact'>подарунок для тебе</a>
-          </li>
-        </ul>
-        <div className='Footer_social__2_oMI'>
+        <div className='Footer_social'>
           <a
             href='https://instagram.com/kirgisska'
             rel='noopener noreferrer'

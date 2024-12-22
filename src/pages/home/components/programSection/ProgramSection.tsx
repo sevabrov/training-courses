@@ -1,9 +1,10 @@
 import author2 from 'assets/flowers/author2.webp';
+import './index.scss';
 
 const ProgramSection = () => {
   return (
-    <section className='WhatContain_for-whom__q_ijA'>
-      <div className='container WhatContain_top__pvkB0'>
+    <section className='WhatContain_for-whom'>
+      <div className='container WhatContain_top'>
         <header>
           <h2>Програма курсу</h2>
           <hr />
@@ -15,8 +16,8 @@ const ProgramSection = () => {
           </p>
         </header>
       </div>
-      <div className='container WhatContain_content__Eu_0G'>
-        <div className='WhatContain_image__MypCW'>
+      <div className='container WhatContain_content'>
+        <div className='WhatContain_image'>
           <picture className=''>
             <img
               alt=''
@@ -41,103 +42,103 @@ const ProgramSection = () => {
             <button className='btn btn-primary'>купити курс</button>
           </footer>
         </div>
-        <ul className='WhatContain_list-items__VNw_z'>
+        <ul className='WhatContain_list-items'>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>1</span>
               <p>Полив. Правила</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>2</span>
               <p>Якою водою поливати рослини</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>3</span>
               <p>Обприскування рослин</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>4</span>
               <p>Гарячий душ для рослин</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>5</span>
               <p>Полірування листя</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>6</span>
               <p>Температура та вологість повітря</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_active__u4Ku_ WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_active WhatContain_pointer'>
               <span className=''>7</span>
               <p>Перелив та пересушування ґрунту</p>
               <i />
             </div>
-            <p className='WhatContain_desc__YLaur'>
+            <p className='WhatContain_desc'>
               Що робити, якщо перелили, або пересушили рослину?
             </p>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>8</span>
               <p>Ґрунт і пересадка</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>9</span>
               <p>Добрива</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>10</span>
               <p>Світло для кімнатних рослин</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>11</span>
               <p>Помилки у садівництві</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>12</span>
               <p>Шкідники та хвороби рослин</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>13</span>
               <p>Пори року і рослини</p>
               <i />
             </div>
           </li>
           <li>
-            <div className='WhatContain_label__BA2Wf WhatContain_pointer___MEB_'>
+            <div className='WhatContain_label WhatContain_pointer'>
               <span className=''>14</span>
               <p>Особливості догляду </p>
               <i />

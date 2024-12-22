@@ -1,9 +1,10 @@
 import flower2 from 'assets/flowers/flower2.webp';
 import flowerIcon from 'assets/flowers/flower-icon.webp';
+import './index.scss';
 
 const ForWhomSection = () => {
   return (
-    <section className='ForWhom_for-whom__p9jlH'>
+    <section className='ForWhom_for-whom'>
       <div className='container'>
         <header>
           <h2>Цей курс для тебе, якщо ти</h2>
@@ -24,8 +25,8 @@ const ForWhomSection = () => {
             і не знаєш як з цим боротись та як запобігти.
           </p>
         </header>
-        <div className='ForWhom_lvls__ECAbH'>
-          <div className='ForWhom_lvls-group__Ywqsk'>
+        <div className='ForWhom_lvls'>
+          <div className='ForWhom_lvls-group'>
             <div>
               <picture className=''>
                 <img
@@ -105,7 +106,7 @@ const ForWhomSection = () => {
             </div>
             <span>Початківець</span>
           </div>
-          <div className='ForWhom_lvls-group__Ywqsk'>
+          <div className='ForWhom_lvls-group'>
             <div>
               <picture className=''>
                 <img
@@ -185,7 +186,7 @@ const ForWhomSection = () => {
             </div>
             <span>Любитель</span>
           </div>
-          <div className='ForWhom_lvls-group__Ywqsk'>
+          <div className='ForWhom_lvls-group'>
             <div>
               <picture className=''>
                 <img
@@ -266,7 +267,7 @@ const ForWhomSection = () => {
             <span>Практик</span>
           </div>
         </div>
-        <picture className='ForWhom_section-decor__9_gM7'>
+        <picture className='ForWhom_section-decor'>
           <img
             alt=''
             data-nimg='1'

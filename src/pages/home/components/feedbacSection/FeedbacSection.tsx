@@ -1,12 +1,13 @@
 import author3 from 'assets/flowers/author3.webp';
 import flower4 from 'assets/flowers/flower4.webp';
 import feedback from 'assets/flowers/feedback.webp';
+import './index.scss';
 
 const FeedbacSection = () => {
   return (
-    <section className='CurseSection_curse-section___qPjP'>
+    <section className='CurseSection_curse-section'>
       <div className='container'>
-        <picture className='CurseSection_section-decor__ID_GC'>
+        <picture className='CurseSection_section-decor'>
           <img
             alt=''
             data-nimg='1'
@@ -25,7 +26,7 @@ const FeedbacSection = () => {
           <h2>Відгуки учнів</h2>
           <hr />
         </header>
-        <div className='CurseSection_content__zYc8b'>
+        <div className='CurseSection_content'>
           <picture className=''>
             <img
               alt=''
@@ -57,7 +58,7 @@ const FeedbacSection = () => {
             />
           </picture>
         </div>
-        <div className='CurseSection_content__zYc8b'>
+        <div className='CurseSection_content'>
           <picture className=''>
             <img
               alt=''
@@ -73,7 +74,7 @@ const FeedbacSection = () => {
               width='1216'
             />
           </picture>
-          <div className='CurseSection_copy__ICFfA'>
+          <div className='CurseSection_copy'>
             <p>
               Не втрать свою можливість вже і зараз дізнатись усі секрети з
               вирощення та догляду за кімнатними рослинами. Твоя затишна
@@ -82,17 +83,17 @@ const FeedbacSection = () => {
               <br />
               Впиши промокод FIKUS
             </p>
-            <div className='CurseSection_action__Po4oB'>
+            <div className='CurseSection_action'>
               <div>
                 <hr />
                 <button className='btn btn-primary'>купити курс</button>
               </div>
               <span>
-                <span className='CurseSection_new-price__jgLvO'>
+                <span className='CurseSection_new-price'>
                   <span>і придбай за </span>
                   15$
                 </span>
-                <span className='CurseSection_old-price__KKEqR'>
+                <span className='CurseSection_old-price'>
                   звичайна ціна: 30$
                 </span>
               </span>

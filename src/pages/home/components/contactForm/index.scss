@@ -1,0 +1,137 @@
+.LeaveContact_leave-contact {
+  align-items: center;
+  gap: var(--gap);
+  display: flex;
+  flex-direction: column
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact {
+    margin-top: 160px
+  }
+}
+
+@media(min-width: 993px) {
+  .LeaveContact_leave-contact {
+    background-image: url('/assets/page-decor.png');
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    background-position: center -870px;
+    padding: 80px 0
+  }
+}
+
+.LeaveContact_leave-contact>div {
+  background-color: var(--color-primary);
+  padding: 40px 24px;
+  background-image: url('/assets/page-decor.png');
+  background-repeat: no-repeat;
+  background-size: 1370px;
+  background-position: 20px -90px;
+  gap: 24px
+}
+
+@media(min-width: 993px) {
+  .LeaveContact_leave-contact>div {
+    max-width: 952px;
+    padding: 40px 32px;
+    border-radius: var(--border-8)
+  }
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact>div {
+    flex-direction: column-reverse;
+    gap: 24px;
+    background-size: 850px;
+    background-position: -280px -110px
+  }
+}
+
+.LeaveContact_leave-contact header {
+  color: #fff;
+  max-width: 620px;
+  width: 100%;
+  gap: 24px
+}
+
+.LeaveContact_leave-contact header p {
+  color: #fff
+}
+
+.LeaveContact_leave-contact .LeaveContact_section-decor {
+  pointer-events: none
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact .LeaveContact_section-decor {
+    position: relative;
+    margin-top: -230px
+  }
+}
+
+@media(min-width: 993px) {
+  .LeaveContact_leave-contact .LeaveContact_section-decor {
+    position: absolute;
+    bottom: -8px;
+    right: -100px
+  }
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+  max-width: 780px;
+  width: 100%
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact .LeaveContact_form-container {
+    flex-direction: column;
+    align-items: flex-start
+  }
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container a {
+  font-weight: 700;
+  border-radius: 100px
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container>div {
+  display: flex;
+  gap: 4px;
+  width: 100%
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact .LeaveContact_form-container>div {
+    flex-direction: column
+  }
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container>div input {
+  width: 100%
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=email],
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=tel],
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=text] {
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 11px 8px;
+  color: #fff;
+  border-radius: 4px
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=email]::placeholder,
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=tel]::placeholder,
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=text]::placeholder {
+  color: #fff;
+  opacity: .8
+}
+
+.LeaveContact_leave-contact .LeaveContact_form-container>div input[type=submit] {
+  max-width: 160px
+}

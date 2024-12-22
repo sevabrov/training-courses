@@ -1,12 +1,13 @@
 import headerImage from 'assets/flowers/header-image.webp';
 import author from 'assets/flowers/author.webp';
 import iconInsta from 'assets/flowers/icon_insta.svg';
+import './index.scss';
 
 const MainSection = () => {
   return (
-    <header className='HomeHeader_home-header__AdCbU' id='author'>
+    <header className='HomeHeader_home-header' id='author'>
       <div className='container'>
-        <div className='HomeHeader_content__X_0PT'>
+        <div className='HomeHeader_content'>
           <div>
             <h1>Секрети кімнатних рослин</h1>
             <p>
@@ -16,7 +17,7 @@ const MainSection = () => {
           </div>
           <button className='btn btn-primary'>купити курс</button>
         </div>
-        <div className='HomeHeader_image__FDNOm'>
+        <div className='HomeHeader_image'>
           <picture>
             <img
               alt='hader image'
@@ -32,7 +33,7 @@ const MainSection = () => {
             />
           </picture>
         </div>
-        <div className='HomeHeader_bio__KusyE'>
+        <div className='HomeHeader_bio'>
           <picture>
             <img
               alt='author image'
@@ -48,7 +49,7 @@ const MainSection = () => {
               width='622'
             />
           </picture>
-          <div className='HomeHeader_bio-info__KxCQ0'>
+          <div className='HomeHeader_bio-info'>
             <span>- Про автора</span>
             <h2>Леся, яка перетворить твій дім на джунглі</h2>
             <p>
@@ -73,7 +74,7 @@ const MainSection = () => {
               YouTube - 11K
               <br />
             </p>
-            <div className='HomeHeader_bio-socials__BBlS0'>
+            <div className='HomeHeader_bio-socials'>
               <span>Підпишись</span>
               <hr />
               <a

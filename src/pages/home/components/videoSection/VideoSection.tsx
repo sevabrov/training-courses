@@ -1,8 +1,9 @@
 import flower1 from 'assets/flowers/flower1.webp';
+import './index.scss';
 
 const VideoSection = () => {
   return (
-    <section className='VideoSection_video-section__y8bpU' id='curse'>
+    <section className='VideoSection_video-section' id='curse'>
       <div className='container'>
         <header>
           <h2>Що це за курс?</h2>
@@ -12,7 +13,7 @@ const VideoSection = () => {
             чекатимуть на курсі!
           </p>
         </header>
-        <div className='VideoSection_video__EaZ0C'>
+        <div className='VideoSection_video'>
           <p>Тут треба подумати що вставити!!!</p>
         </div>
         <footer className='call-to-action'>
@@ -20,7 +21,7 @@ const VideoSection = () => {
           <hr />
           <button className='btn btn-primary'>купити курс</button>
         </footer>
-        <picture className='VideoSection_decor-image__6IwF_'>
+        <picture className='VideoSection_decor-image'>
           <img
             alt=''
             data-nimg='1'

@@ -1,0 +1,169 @@
+.CurseSection_curse-section {
+  background-color: var(--color-bg);
+  padding: 40px 0;
+  background-image: url('/assets/page-decor.png');
+  background-repeat: no-repeat;
+  background-size: 1300px;
+  background-position: -330px -20px;
+  position: relative
+}
+
+@media(min-width: 993px) {
+  .CurseSection_curse-section {
+    padding: 80px 0
+  }
+}
+
+.CurseSection_curse-section>div {
+  align-items: center;
+  gap: var(--gap)
+}
+
+@media(min-width: 993px) {
+  .CurseSection_curse-section>div {
+    gap: 64px;
+    align-items: flex-end
+  }
+}
+
+.CurseSection_curse-section header {
+  align-items: center;
+  max-width: 842px;
+  width: 100%
+}
+
+.CurseSection_curse-section header h2,
+.CurseSection_curse-section header p {
+  max-width: 624px;
+  width: 100%;
+  text-align: center
+}
+
+.CurseSection_curse-section .CurseSection_section-decor {
+  position: relative;
+  pointer-events: none;
+  left: -270px;
+  max-width: 490px
+}
+
+@media(min-width: 993px) {
+  .CurseSection_curse-section .CurseSection_section-decor {
+    position: absolute;
+    bottom: -50px
+  }
+}
+
+@media screen and (min-width: 992px)and (max-width:991px) {
+  .CurseSection_curse-section .CurseSection_section-decor {
+    left: -27vw
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .CurseSection_curse-section .CurseSection_section-decor {
+    left: 30px
+  }
+}
+
+@media(max-width: 992px) {
+  .CurseSection_curse-section .CurseSection_section-decor {
+    margin-top: -100px;
+    left: 30px
+  }
+}
+
+.CurseSection_curse-section .CurseSection_content {
+  max-width: 842px;
+  width: 100%;
+  display: flex;
+  gap: var(--gap);
+  align-items: center
+}
+
+@media(max-width: 992px) {
+  .CurseSection_curse-section .CurseSection_content {
+    flex-direction: column
+  }
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_copy {
+  width: 100%;
+  max-width: 405px;
+  display: flex;
+  flex-direction: column
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_copy h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 800
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_copy p {
+  margin-bottom: 24px
+}
+
+.CurseSection_curse-section .CurseSection_content picture {
+  border-radius: 8px;
+  overflow: hidden
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_action {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column
+}
+
+@media(min-width: 993px) {
+  .CurseSection_curse-section .CurseSection_content .CurseSection_action {
+    flex-direction: row;
+    align-items: center
+  }
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_action div {
+  display: flex;
+  gap: 16px;
+  align-items: center
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_action hr {
+  width: 24px;
+  height: 1px;
+  background-color: var(--color-text)
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_action span {
+  position: relative
+}
+
+.CurseSection_curse-section .CurseSection_content .CurseSection_action span small {
+  font-size: 24px;
+  position: absolute;
+  top: -24px;
+  right: 12px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: line-through
+}
+
+.CurseSection_curse-section .CurseSection_old-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text);
+  display: block
+}
+
+.CurseSection_curse-section .CurseSection_new-price {
+  font-size: 24px;
+  display: block;
+  font-weight: 800
+}
+
+.CurseSection_curse-section .CurseSection_new-price span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text)
+}

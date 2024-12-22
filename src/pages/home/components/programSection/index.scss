@@ -1,0 +1,157 @@
+.WhatContain_for-whom {
+  padding: 40px 0;
+  align-items: center;
+  gap: var(--gap);
+  display: flex;
+  flex-direction: column;
+  background-image: url('/assets/page-decor.png');
+  background-repeat: no-repeat;
+  background-size: 1300px;
+  background-position: center 124px
+}
+
+@media(min-width: 993px) {
+  .WhatContain_for-whom {
+    padding: 80px 0
+  }
+}
+
+.WhatContain_for-whom .WhatContain_top {
+  align-items: center;
+  text-align: center
+}
+
+.WhatContain_for-whom .WhatContain_top header {
+  align-items: center
+}
+
+.WhatContain_for-whom .WhatContain_image {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  align-items: center
+}
+
+@media(min-width: 993px) {
+  .WhatContain_for-whom .WhatContain_image {
+    width: 50%;
+    max-width: 550px
+  }
+}
+
+@media(max-width: 992px) {
+  .WhatContain_for-whom .WhatContain_image {
+    max-width: 360px
+  }
+}
+
+.WhatContain_for-whom .WhatContain_image footer {
+  justify-content: center
+}
+
+@media(max-width: 992px) {
+  .WhatContain_for-whom .WhatContain_image footer {
+    align-items: center
+  }
+}
+
+.WhatContain_for-whom .WhatContain_image footer button {
+  flex: none
+}
+
+.WhatContain_for-whom .WhatContain_content {
+  display: flex;
+  gap: var(--gap)
+}
+
+@media(min-width: 993px) {
+  .WhatContain_for-whom .WhatContain_content {
+    flex-direction: row;
+    justify-content: space-between
+  }
+}
+
+@media(max-width: 992px) {
+  .WhatContain_for-whom .WhatContain_content {
+    align-items: center
+  }
+}
+
+.WhatContain_for-whom .WhatContain_list-items {
+  gap: 8px;
+  display: flex;
+  flex-direction: column
+}
+
+@media(min-width: 993px) {
+  .WhatContain_for-whom .WhatContain_list-items {
+    width: 50%;
+    max-width: 647px
+  }
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label {
+  border: 1px solid var(--color-text);
+  border-radius: var(--border-4);
+  display: flex;
+  gap: 16px;
+  position: relative;
+  padding-right: 60px;
+  background-color: #fff
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label.WhatContain_pointer {
+  cursor: pointer
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label.WhatContain_active {
+  border-color: var(--color-primary)
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label.WhatContain_active span {
+  background-color: var(--color-primary)
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label.WhatContain_active i {
+  transform: translateY(-50%) rotate(180deg)
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label p {
+  color: var(--color-black);
+  font-size: 13px;
+  padding: 8px 0
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label span {
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-text);
+  color: #fff;
+  font-weight: 700;
+  flex: none
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_label i {
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/arrow.png');
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_desc {
+  padding: 16px;
+  font-size: 13px
+}
+
+.WhatContain_for-whom .WhatContain_list-items .WhatContain_desc strong {
+  color: var(--color-primary)
+}
