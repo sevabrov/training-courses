@@ -1,5 +1,4 @@
 import {
-  ContactForm,
   ForWhomSection,
   MainSection,
   ProgramSection,
@@ -15,7 +14,6 @@ const HomePage = () => {
       <VideoSection />
       <ForWhomSection />
       <ProgramSection />
-      <ContactForm />
       <FeedbacSection />
       <FooterSection />
     </div>

@@ -58,34 +58,6 @@ const ProgramSection = () => {
             </div>
           </li>
           <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>3</span>
-              <p>Обприскування рослин</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>4</span>
-              <p>Гарячий душ для рослин</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>5</span>
-              <p>Полірування листя</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>6</span>
-              <p>Температура та вологість повітря</p>
-              <i />
-            </div>
-          </li>
-          <li>
             <div className='WhatContain_label WhatContain_active WhatContain_pointer'>
               <span className=''>7</span>
               <p>Перелив та пересушування ґрунту</p>
@@ -94,55 +66,6 @@ const ProgramSection = () => {
             <p className='WhatContain_desc'>
               Що робити, якщо перелили, або пересушили рослину?
             </p>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>8</span>
-              <p>Ґрунт і пересадка</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>9</span>
-              <p>Добрива</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>10</span>
-              <p>Світло для кімнатних рослин</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>11</span>
-              <p>Помилки у садівництві</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>12</span>
-              <p>Шкідники та хвороби рослин</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>13</span>
-              <p>Пори року і рослини</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>14</span>
-              <p>Особливості догляду </p>
-              <i />
-            </div>
           </li>
         </ul>
       </div>

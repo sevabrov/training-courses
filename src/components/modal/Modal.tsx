@@ -1,13 +1,11 @@
-import FormBasic from 'components/form/Form';
+// import FormBasic from 'components/form/Form';
+import ContactForm from 'components/contactForm/ContactForm';
 import Modal from 'react-modal';
 
 type ModalBasicProps = {
   modalIsOpen: boolean;
   setModalIsOpen: (value: boolean) => void;
 };
-
-// Set the root element for accessibility
-Modal.setAppElement('#root');
 
 const ModalBasic = ({
   modalIsOpen = false,
@@ -28,7 +26,7 @@ const ModalBasic = ({
         },
       }}
     >
-      <h2>Базовий догляд за рослинами для новачкі</h2>
+      {/* <h2>Базовий догляд за рослинами для новачкі</h2>
       <p>Покрокова інструкція по правильному догляду за домашніми рослинами</p>
       <br />
       <div style={{ display: 'flex', justifyContent: 'center' }}></div>
@@ -37,7 +35,8 @@ const ModalBasic = ({
       <p>
         P.s. Ви нічим не ризикуєте. Якщо курс вам не сподобається, я поверну вам
         кошти без зайвих питань.
-      </p>
+      </p> */}
+      <ContactForm />
     </Modal>
   );
 };
