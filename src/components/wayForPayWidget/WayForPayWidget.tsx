@@ -71,8 +71,9 @@ const WayForPayWidget = ({
 
   return (
     <div>
-      <h1>WayForPay Payment</h1>
-      <button onClick={pay}>Оплатить</button>
+      <button className='btn' onClick={pay}>
+        Оплатить
+      </button>
     </div>
   );
 };

@@ -1,7 +1,19 @@
 import flower3 from 'assets/flowers/flower3.webp';
+import WayForPayWidget from 'components/wayForPayWidget/WayForPayWidget';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import PhoneInput from 'react-phone-number-input';
+import { Fragment, useState } from 'react';
+import { FormContentDataItem, FormProps } from './type';
+import { errorValidation, formContentData, initialValues } from './helper';
+import 'react-phone-number-input/style.css';
 import './index.scss';
 
 const ContactForm = () => {
+  const [data, setData] = useState<FormProps | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  console.log(data, 'FormBasic');
+
   return (
     <section className='LeaveContact_leave-contact' id='contact'>
       <div className='container'>
@@ -13,39 +25,85 @@ const ContactForm = () => {
             ПОДАРУНОК!
           </p>
         </header>
-        <form className='LeaveContact_form-container'>
-          <div>
-            <input className='' name='name' placeholder="Ім'я" type='text' />
-            <input
-              className=''
-              name='email'
-              placeholder='Електронна адреса'
-              type='email'
-            />
-            <input
-              className=''
-              name='phone'
-              placeholder='Код країни і номер тел'
-              type='tel'
-            />
-            <input className='btn' type='submit' value='Подарунок' />
-          </div>
-        </form>
-        <picture className='LeaveContact_section-decor'>
-          <img
-            alt=''
-            data-nimg='1'
-            decoding='async'
-            height='882'
-            loading='lazy'
-            src={flower3}
-            srcSet={flower3}
-            style={{
-              color: 'transparent',
+        {data === null ? (
+          <Formik
+            initialValues={initialValues}
+            validate={(values: FormProps) => errorValidation(values)}
+            onSubmit={(values, { setSubmitting }) => {
+              setData(values);
+              setIsLoading(true);
+              setTimeout(() => {
+                setSubmitting(false);
+                setIsLoading(false);
+              }, 2000);
             }}
-            width='646'
+          >
+            {({ isSubmitting, setFieldValue }) => (
+              <Form className='LeaveContact_form-container'>
+                <div>
+                  {formContentData.map((item: FormContentDataItem) => (
+                    <Fragment key={item.fieldName}>
+                      <Field type={item.fieldType} name={item.fieldName} />
+                      <ErrorMessage
+                        className='LeaveContact_form-error'
+                        name={item.fieldName}
+                        component='div'
+                      />
+                    </Fragment>
+                  ))}
+                  <div className='LeaveContact_section-button'>
+                    <PhoneInput
+                      id='phoneNumber'
+                      name='phoneNumber'
+                      value={initialValues.phoneNumber}
+                      onChange={(value) => setFieldValue('phoneNumber', value)}
+                      defaultCountry='UA'
+                      international
+                    />
+                    <ErrorMessage
+                      className='LeaveContact_form-error'
+                      name={'phoneNumber'}
+                      component='div'
+                    />
+                    <button
+                      className='btn'
+                      type='submit'
+                      disabled={isSubmitting}
+                    >
+                      Перейти до оплати
+                    </button>
+                  </div>
+                </div>
+                <picture className='LeaveContact_section-decor'>
+                  <img
+                    alt=''
+                    data-nimg='1'
+                    decoding='async'
+                    height='882'
+                    loading='lazy'
+                    src={flower3}
+                    srcSet={flower3}
+                    style={{
+                      color: 'transparent',
+                    }}
+                    width='646'
+                  />
+                </picture>
+              </Form>
+            )}
+          </Formik>
+        ) : isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <WayForPayWidget
+            productName='Курси Zeleno House'
+            productPrice={1}
+            clientFirstName={data.firstName}
+            clientLastName={data.lastName}
+            clientEmail={data.email}
+            clientPhone={data.phoneNumber}
           />
-        </picture>
+        )}
       </div>
     </section>
   );
