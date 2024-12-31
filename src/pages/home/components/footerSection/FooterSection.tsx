@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import iconInsta from 'assets/flowers/icon_insta.svg';
 import './index.scss';
 
@@ -5,11 +6,30 @@ const FooterSection = () => {
   return (
     <footer className='Footer_footer'>
       <div className='container'>
-        <span>
-          © Copyright 2023{' '}
-          <a href='https://empiria-studio.com'>Empiria Studio</a> - усі права
-          захищено
-        </span>
+        <div className='Footer_info'>
+          <span>© Copyright 2024. Всі права захищені.</span>
+          <div>
+            <span>
+              Будь-яке копіювання матеріалів дозволяється тільки з погодження
+              правовласників
+            </span>
+          </div>
+          <div>
+            <span>ФОП Броварний Всеволод Віталійович</span>
+          </div>
+          <div>
+            <span>3293819410</span>
+          </div>
+          <div className='Footer_contacts'>
+            <Link to='/privacy-policy' target='blank'>
+              Політика конфіденційності
+            </Link>
+            <Link to='/oferta' target='blank'>
+              Публічна оферта
+            </Link>
+          </div>
+        </div>
+
         <div className='Footer_social'>
           <a
             href='https://instagram.com/kirgisska'
