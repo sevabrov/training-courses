@@ -1,7 +1,15 @@
+import { useState } from 'react';
 import author2 from 'assets/flowers/author2.webp';
 import './index.scss';
+import { programData } from './helper';
 
 const ProgramSection = () => {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  const toggleItems = (index: number) => {
+    setActiveIndex(index);
+  };
+
   return (
     <section className='WhatContain_for-whom'>
       <div className='container WhatContain_top'>
@@ -43,30 +51,22 @@ const ProgramSection = () => {
           </footer>
         </div>
         <ul className='WhatContain_list-items'>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>1</span>
-              <p>Полив. Правила</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_pointer'>
-              <span className=''>2</span>
-              <p>Якою водою поливати рослини</p>
-              <i />
-            </div>
-          </li>
-          <li>
-            <div className='WhatContain_label WhatContain_active WhatContain_pointer'>
-              <span className=''>7</span>
-              <p>Перелив та пересушування ґрунту</p>
-              <i />
-            </div>
-            <p className='WhatContain_desc'>
-              Що робити, якщо перелили, або пересушили рослину?
-            </p>
-          </li>
+          {programData.map((item, idx) => (
+            <li key={item.id} onClick={() => toggleItems(idx)}>
+              <div
+                className={`WhatContain_label WhatContain_pointer ${
+                  activeIndex === idx ? 'WhatContain_active' : ''
+                }`}
+              >
+                <span className=''>{item.id}</span>
+                <p>{item.title}</p>
+                <i />
+              </div>
+              {activeIndex === idx && (
+                <p className='WhatContain_desc'>{item.desc}</p>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
     </section>
