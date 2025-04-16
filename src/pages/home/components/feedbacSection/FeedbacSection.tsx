@@ -23,7 +23,7 @@ const FeedbacSection = () => {
           />
         </picture>
         <header>
-          <h2>Відгуки учнів</h2>
+          <h2>Відгуки</h2>
           <hr />
         </header>
         <div className='CurseSection_content'>
@@ -80,8 +80,6 @@ const FeedbacSection = () => {
               вирощення та догляду за кімнатними рослинами. Твоя затишна
               оранжерея чекає на тебе!
               <br />
-              <br />
-              Впиши промокод FIKUS
             </p>
             <div className='CurseSection_action'>
               <div>
@@ -91,10 +89,10 @@ const FeedbacSection = () => {
               <span>
                 <span className='CurseSection_new-price'>
                   <span>і придбай за </span>
-                  15$
+                  99$
                 </span>
                 <span className='CurseSection_old-price'>
-                  звичайна ціна: 30$
+                  звичайна ціна: 179$
                 </span>
               </span>
             </div>

@@ -1,5 +1,6 @@
 import flower1 from 'assets/flowers/flower1.webp';
 import './index.scss';
+import YouTubeEmbed from './Video';
 
 const VideoSection = () => {
   return (
@@ -14,10 +15,11 @@ const VideoSection = () => {
           </p>
         </header>
         <div className='VideoSection_video'>
-          <p>Тут треба подумати що вставити!!!</p>
+          
+        <YouTubeEmbed videoId="SadldNQD2PY" />
         </div>
         <footer className='call-to-action'>
-          <p>Створи джунглі у себе вдома</p>
+          <p>Навчись доглядати за своїми рослинами</p>
           <hr />
           <button className='btn btn-primary'>купити курс</button>
         </footer>

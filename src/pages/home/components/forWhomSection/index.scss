@@ -17,6 +17,10 @@
   gap: 40px
 }
 
+.ForWhom_for-whom p{
+  font-size: var(--font-16);
+}
+
 @media(min-width: 993px) {
   .ForWhom_for-whom>div {
     align-items: center;
@@ -54,38 +58,8 @@
   }
 }
 
-@media(max-width: 992px) {
+@media(max-width: 720px) {
   .ForWhom_for-whom .ForWhom_section-decor {
-    min-width: 220px
+    display: none;
   }
-}
-
-.ForWhom_for-whom .ForWhom_lvls {
-  display: flex;
-  flex-direction: column;
-  gap: 24px
-}
-
-@media(max-width: 992px) {
-  .ForWhom_for-whom .ForWhom_lvls {
-    width: 100%;
-    align-items: center;
-    padding-left: 27vw
-  }
-}
-
-.ForWhom_for-whom .ForWhom_lvls-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px
-}
-
-.ForWhom_for-whom .ForWhom_lvls-group:first-child picture:first-of-type~picture,
-.ForWhom_for-whom .ForWhom_lvls-group:nth-child(2) picture:nth-of-type(3)~picture {
-  opacity: .4
-}
-
-.ForWhom_for-whom .ForWhom_lvls-group>div {
-  display: flex;
-  gap: 16px
 }

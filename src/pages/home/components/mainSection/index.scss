@@ -33,7 +33,7 @@
 
 @media(max-width: 992px) {
   .HomeHeader_home-header .HomeHeader_content {
-    margin-top: 104px;
+    margin-top: 50px;
     max-width: 300px
   }
 }
@@ -45,7 +45,12 @@
 }
 
 .HomeHeader_home-header .HomeHeader_content p {
-  font-size: var(--font-14)
+  font-size: var(--font-14);
+  margin-right: 40%;
+}
+
+.HomeHeader_home-header .HomeHeader_content h1 span {
+  font-weight: 400;
 }
 
 @media(min-width: 993px) {
@@ -109,20 +114,20 @@
     width: 31%;
     max-width: 380px;
     height: 100%;
-    padding-top: 9%
+    padding-top: 6%
   }
 }
 
 @media(max-width: 992px) {
   .HomeHeader_home-header .HomeHeader_bio {
-    margin-top: 480px;
+    margin-top: 380px;
     align-items: center;
     max-width: 580px
   }
 }
 
 .HomeHeader_home-header .HomeHeader_bio picture {
-  width: 260px
+  width: 320px;
 }
 
 .HomeHeader_home-header .HomeHeader_bio-info>span {
