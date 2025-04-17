@@ -1,5 +1,4 @@
 .CurseSection_curse-section {
-  background-color: var(--color-bg);
   padding: 40px 0;
   background-image: url('/assets/page-decor.png');
   background-repeat: no-repeat;
@@ -104,6 +103,7 @@
 }
 
 .CurseSection_curse-section .CurseSection_content picture {
+  max-height: 300px;
   border-radius: 8px;
   overflow: hidden
 }

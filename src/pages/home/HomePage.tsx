@@ -5,6 +5,7 @@ import {
   VideoSection,
   FeedbacSection,
   FooterSection,
+  ResultSection
 } from './components';
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
       <VideoSection />
       <ForWhomSection />
       <ProgramSection />
+      <ResultSection />
       <FeedbacSection />
       <FooterSection />
     </div>

@@ -1,7 +1,15 @@
 import author3 from 'assets/flowers/author3.webp';
 import flower4 from 'assets/flowers/flower4.webp';
-import feedback from 'assets/flowers/feedback.webp';
+import img1 from 'assets/feedback/1.webp';
+import img2 from 'assets/feedback/2.webp';
+import img3 from 'assets/feedback/3.webp';
+import img4 from 'assets/feedback/4.webp';
+import img5 from 'assets/feedback/5.webp';
+import img6 from 'assets/feedback/6.webp';
 import './index.scss';
+import ImageSlider from './components/ImageSlider';
+
+const images = [img1, img2, img3, img4, img5, img6,]
 
 const FeedbacSection = () => {
   return (
@@ -27,7 +35,8 @@ const FeedbacSection = () => {
           <hr />
         </header>
         <div className='CurseSection_content'>
-          <picture className=''>
+          <ImageSlider images={images} />
+          {/* <picture className=''>
             <img
               alt=''
               data-nimg='1'
@@ -56,7 +65,7 @@ const FeedbacSection = () => {
               }}
               width='1824'
             />
-          </picture>
+          </picture> */}
         </div>
         <div className='CurseSection_content'>
           <picture className=''>
