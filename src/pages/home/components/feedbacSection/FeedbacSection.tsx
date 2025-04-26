@@ -67,7 +67,7 @@ const FeedbacSection = () => {
             />
           </picture> */}
         </div>
-        <div className='CurseSection_content'>
+        <div className='CurseSection_content' style={{maxWidth: '100%'}}>
           <picture className=''>
             <img
               alt=''
