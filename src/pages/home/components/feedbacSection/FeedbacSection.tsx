@@ -1,5 +1,6 @@
 import author3 from 'assets/flowers/author3.webp';
-import flower4 from 'assets/flowers/flower4.webp';
+// import flower4 from 'assets/flowers/flower4.webp';
+import flower4 from 'assets/flowers/flower4.png';
 import img1 from 'assets/feedback/1.webp';
 import img2 from 'assets/feedback/2.webp';
 import img3 from 'assets/feedback/3.webp';
@@ -36,36 +37,6 @@ const FeedbacSection = () => {
         </header>
         <div className='CurseSection_content'>
           <ImageSlider images={images} />
-          {/* <picture className=''>
-            <img
-              alt=''
-              data-nimg='1'
-              decoding='async'
-              height='1080'
-              loading='lazy'
-              src={feedback}
-              srcSet={feedback}
-              style={{
-                color: 'transparent',
-              }}
-              width='1824'
-            />
-          </picture>
-          <picture className=''>
-            <img
-              alt=''
-              data-nimg='1'
-              decoding='async'
-              height='1080'
-              loading='lazy'
-              src={feedback}
-              srcSet={feedback}
-              style={{
-                color: 'transparent',
-              }}
-              width='1824'
-            />
-          </picture> */}
         </div>
         <div className='CurseSection_content' style={{maxWidth: '100%'}}>
           <picture className=''>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ModalBasic from 'components/modal/Modal';
-import headerImage from 'assets/flowers/header-image.webp';
+import headerImage from 'assets/flowers/header-image.png';
 import author from 'assets/flowers/author.webp';
 import iconInsta from 'assets/flowers/icon_insta.svg';
 import './index.scss';

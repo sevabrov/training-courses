@@ -70,7 +70,7 @@
 @media(min-width: 993px) {
   .HomeHeader_home-header .HomeHeader_image {
     height: 100%;
-    width: 30%;
+    width: 100%;
     max-width: 406px;
     left: 50%;
     transform: translateX(-50%)
@@ -85,9 +85,10 @@
 }
 
 .HomeHeader_home-header .HomeHeader_image>picture {
-  width: 198%;
+  width: 170%;
   position: absolute;
-  left: 72%;
+  top: -15%;
+  left: 66%;
   pointer-events: none;
   transform: translateX(-50%)
 }
@@ -96,7 +97,8 @@
   .HomeHeader_home-header .HomeHeader_image>picture {
     width: 130%;
     max-width: 780px;
-    min-width: 520px
+    min-width: 410px;
+    top: 24%;
   }
 }
 
@@ -120,7 +122,7 @@
 
 @media(max-width: 992px) {
   .HomeHeader_home-header .HomeHeader_bio {
-    margin-top: 380px;
+    margin-top: 350px;
     align-items: center;
     max-width: 580px
   }
