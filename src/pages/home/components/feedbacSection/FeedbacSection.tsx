@@ -1,6 +1,5 @@
 import author3 from 'assets/flowers/author3.webp';
-// import flower4 from 'assets/flowers/flower4.webp';
-import flower4 from 'assets/flowers/flower4.png';
+import flower4 from 'assets/flowers/flower4.webp';
 import img1 from 'assets/feedback/1.webp';
 import img2 from 'assets/feedback/2.webp';
 import img3 from 'assets/feedback/3.webp';
@@ -65,9 +64,7 @@ const FeedbacSection = () => {
             </picture>
             <div className='CurseSection_copy'>
               <p>
-                Не втрать свою можливість вже і зараз дізнатись усі секрети з
-                вирощення та догляду за кімнатними рослинами. Твоя затишна
-                оранжерея чекає на тебе!
+                Не чекай поки твої рослини завʼянуть, купуй курс вже зараз🪴
                 <br />
               </p>
               <div className='CurseSection_action'>
@@ -78,10 +75,10 @@ const FeedbacSection = () => {
                 <span>
                   <span className='CurseSection_new-price'>
                     <span>і придбай за </span>
-                    99$
+                    50€
                   </span>
                   <span className='CurseSection_old-price'>
-                    звичайна ціна: 179$
+                    звичайна ціна: 200€
                   </span>
                 </span>
               </div>

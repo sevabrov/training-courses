@@ -1,0 +1,129 @@
+.Faq_section {
+  padding: 40px 0;
+  align-items: center;
+  gap: var(--gap);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+@media(min-width: 993px) {
+  .Faq_section {
+    padding: 80px 0
+  }
+}
+
+.Faq_section .Faq_top {
+  align-items: center;
+  text-align: center
+}
+
+.Faq_section .Faq_top header {
+  align-items: center
+}
+
+.Faq_section .Faq_content {
+  display: flex;
+  gap: var(--gap)
+}
+
+@media(min-width: 993px) {
+  .Faq_section .Faq_content {
+    flex-direction: row;
+  }
+}
+
+@media(max-width: 992px) {
+  .Faq_section .Faq_content {
+    align-items: center
+  }
+}
+
+.Faq_section .Faq_list-items {
+  gap: 8px;
+  display: flex;
+  flex-direction: column
+}
+
+@media(min-width: 993px) {
+  .Faq_section .Faq_list-items {
+    width: 50%;
+    max-width: 647px
+  }
+}
+
+.Faq_section .Faq_list-items .Faq_label {
+  border: 1px solid var(--color-text);
+  border-radius: var(--border-4);
+  display: flex;
+  gap: 16px;
+  position: relative;
+  padding-right: 60px;
+  background-color: #fff
+}
+
+.Faq_section .Faq_list-items .Faq_label.Faq_pointer {
+  cursor: pointer
+}
+
+.Faq_section .Faq_list-items .Faq_label.Faq_active {
+  border-color: var(--color-primary)
+}
+
+.Faq_section .Faq_list-items .Faq_label.Faq_active span {
+  background-color: var(--color-primary)
+}
+
+.Faq_section .Faq_list-items .Faq_label.Faq_active i {
+  transform: translateY(-50%) rotate(180deg)
+}
+
+.Faq_section .Faq_list-items .Faq_label p {
+  color: var(--color-black);
+  font-size: 13px;
+  padding: 8px 0
+}
+
+.Faq_section .Faq_list-items .Faq_label span {
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-text);
+  color: #fff;
+  font-weight: 700;
+  flex: none
+}
+
+.Faq_section .Faq_list-items .Faq_label i {
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/arrow.png');
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.Faq_section .Faq_list-items .Faq_desc {
+  padding: 16px;
+  font-size: 13px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.Faq_section .Faq_list-items .Faq_desc p {
+  font-size: 13px;
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.Faq_section .Faq_list-items .Faq_desc a {
+  color: var(--color-primary);
+  font-weight: 700;
+}

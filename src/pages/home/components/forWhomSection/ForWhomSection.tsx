@@ -1,5 +1,4 @@
-// import flower2 from 'assets/flowers/flower2.webp';
-import flower2 from 'assets/flowers/flower2.png';
+import flower2 from 'assets/flowers/flower2.webp';
 import './index.scss';
 
 const ForWhomSection = () => {

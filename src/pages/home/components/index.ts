@@ -5,3 +5,4 @@ export { default as ProgramSection } from './programSection/ProgramSection';
 export { default as FeedbacSection } from './feedbacSection/FeedbacSection';
 export { default as FooterSection } from './footerSection/FooterSection';
 export { default as ResultSection } from './resultSection/ResultSection';
+export { default as FaqSection } from './faqSection/FaqSection';

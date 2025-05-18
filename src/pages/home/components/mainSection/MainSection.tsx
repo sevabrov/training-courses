@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ModalBasic from 'components/modal/Modal';
-import headerImage from 'assets/flowers/header-image.png';
+import headerImage from 'assets/flowers/header-image.webp';
 import author from 'assets/flowers/author.webp';
 import iconInsta from 'assets/flowers/icon_insta.svg';
 import './index.scss';
@@ -23,8 +23,7 @@ const MainSection = () => {
                 <span>від новачка до профі</span>
               </h1>
               <p>
-              Це повноцінний посібник, де я зібрала найкориснішу 
-              та найцікавішу інформацію, щоб твої рослини почували себе щасливими.
+                Цей курс — покроковий план із догляду за кімнатними рослинами, заснований на моєму практичному досвіді. Не просто теорія, а конкретні алгоритми дій та приклади.
               </p>
             </div>
             <button className='btn btn-primary' onClick={getPayment}>

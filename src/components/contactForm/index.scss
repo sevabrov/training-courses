@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   background-size: 1370px;
   background-position: 20px -90px;
-  gap: 24px
+  gap: 12px
 }
 
 @media(min-width: 993px) {
@@ -43,11 +43,12 @@
   color: #fff;
   max-width: calc(100% - 100px);
   width: 100%;
-  gap: 24px
+  gap: 12px
 }
 
 .LeaveContact_leave-contact header p {
-  color: #fff
+  color: #fff;
+  font-size: var(--font-16);
 }
 
 .LeaveContact_leave-contact .LeaveContact_section-decor {

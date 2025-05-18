@@ -90,7 +90,9 @@
   width: 100%;
   max-width: 405px;
   display: flex;
-  flex-direction: column
+  font-size: 20px;
+  flex-direction: column;
+  text-align: center
 }
 
 .CurseSection_curse-section .CurseSection_content .CurseSection_copy h3 {
@@ -154,7 +156,8 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--color-text);
-  display: block
+  display: block;
+  text-decoration: line-through;
 }
 
 .CurseSection_curse-section .CurseSection_new-price {
