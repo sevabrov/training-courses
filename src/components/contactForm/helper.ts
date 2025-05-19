@@ -17,20 +17,20 @@ export const formContentData: FormContentDataItem[] = [
 export const errorValidation = (values: FormProps) => {
   const errors = {} as FormProps;
   if (!values.email) {
-    errors.email = 'email is Required';
+    errors.email = 'Email є обовʼязковим';
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
     errors.email = 'Invalid email address';
   }
   if (!values.firstName) {
-    errors.firstName = 'firstName is Required';
+    errors.firstName = 'Імʼя є обовʼязковим';
   }
   if (!values.lastName) {
-    errors.lastName = 'lastName is Required';
+    errors.lastName = 'Прізвище є обовʼязковим';
   }
   if (!values.phoneNumber) {
-    errors.phoneNumber = 'Required';
+    errors.phoneNumber = 'Телефон є обовʼязковим';
   } else if (!isValidPhoneNumber(values.phoneNumber)) {
-    errors.phoneNumber = 'Enter a valid phone number';
+    errors.phoneNumber = 'Невірний номер телефону';
   }
   return errors;
 };

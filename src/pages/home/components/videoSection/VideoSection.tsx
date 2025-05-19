@@ -25,7 +25,7 @@ const VideoSection = () => {
           <YouTubeEmbed videoId="SadldNQD2PY" />
           </div>
           <footer className='call-to-action'>
-            <p>Навчись доглядати за своїми рослинами</p>
+            <p>Цей курс — твій персональний ключ до розуміння будь-якої рослини.</p>
             <hr />
             <button className='btn btn-primary' onClick={getPayment}>купити курс</button>
           </footer>

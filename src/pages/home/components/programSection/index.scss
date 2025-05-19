@@ -73,7 +73,8 @@
 
 @media(max-width: 992px) {
   .WhatContain_for-whom .WhatContain_content {
-    align-items: center
+    align-items: center;
+    flex-direction: column-reverse;
   }
 }
 

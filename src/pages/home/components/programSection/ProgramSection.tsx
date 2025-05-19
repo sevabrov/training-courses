@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import author2 from 'assets/flowers/author2.webp';
 import './index.scss';
 import { programData } from './helper';
 import ModalBasic from 'components/modal/Modal';
+import VideoPlayer from './VideoPlayer';
 
 const ProgramSection = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -29,25 +29,10 @@ const ProgramSection = () => {
         </div>
         <div className='container WhatContain_content'>
           <div className='WhatContain_image'>
-            <picture className=''>
-              <img
-                alt=''
-                data-nimg='1'
-                decoding='async'
-                height='1075'
-                loading='lazy'
-                src={author2}
-                srcSet={author2}
-                style={{
-                  color: 'transparent',
-                }}
-                width='1106'
-              />
-            </picture>
+            <VideoPlayer />
             <footer className='call-to-action'>
               <p>
-                Навчись правильно доглядати за кімнатними рослинами, щоб більше не
-                гинули
+                Отримай чітку систему догляду, яка працює завжди.
               </p>
               <hr />
               <button className='btn btn-primary' onClick={getPayment}>купити курс</button>

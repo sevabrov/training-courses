@@ -18,9 +18,9 @@ const ContactForm = () => {
     <section className='LeaveContact_leave-contact' id='contact'>
       <div className='container'>
         <header>
-          <h2>Купуй курс вже зараз</h2>
-          <p>
-            та отримай годинну персональну консультацію, щоб розвʼязати саме свої запитання.
+          <h2>Догляд за кімнатними рослинами: від новачка до профі</h2>
+          <p style={{ fontSize: '1.3rem' }}>
+            Купуй зараз за ціною <span style={{fontWeight: 800, fontSize: '1.6rem'}}>50€</span>
           </p>
         </header>
         {data === null ? (
@@ -50,19 +50,21 @@ const ContactForm = () => {
                     </Fragment>
                   ))}
                   <div className='LeaveContact_section-button'>
-                    <PhoneInput
-                      id='phoneNumber'
-                      name='phoneNumber'
-                      value={initialValues.phoneNumber}
-                      onChange={(value) => setFieldValue('phoneNumber', value)}
-                      defaultCountry='UA'
-                      international
-                    />
-                    <ErrorMessage
-                      className='LeaveContact_form-error'
-                      name={'phoneNumber'}
-                      component='div'
-                    />
+                    <div style={{ width: '100%' }}>
+                      <PhoneInput
+                        id='phoneNumber'
+                        name='phoneNumber'
+                        value={initialValues.phoneNumber}
+                        onChange={(value) => setFieldValue('phoneNumber', value)}
+                        defaultCountry='UA'
+                        international
+                      />
+                      <ErrorMessage
+                        className='LeaveContact_form-error PhoneInput-error'
+                        name={'phoneNumber'}
+                        component='div'
+                      />
+                    </div>
                     <button
                       className='btn'
                       type='submit'

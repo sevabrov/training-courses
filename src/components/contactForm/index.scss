@@ -41,9 +41,14 @@
 
 .LeaveContact_leave-contact header {
   color: #fff;
-  max-width: calc(100% - 100px);
   width: 100%;
   gap: 12px
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact header {
+    max-width: calc(100% - 100px);
+  }
 }
 
 .LeaveContact_leave-contact header p {
@@ -82,12 +87,25 @@
   color: #99200b;
   margin-top: -18px;
   font-size: 1rem;
+  &.PhoneInput-error {
+    margin-top: 0;
+  }
 }
 
 .LeaveContact_leave-contact .LeaveContact_section-button {
   display: flex;
   gap: 20px;
-  width: 100%
+  width: 100%;
+  .PhoneInput {
+      width: 100%
+    }
+}
+
+@media(max-width: 992px) {
+  .LeaveContact_leave-contact .LeaveContact_section-button {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .LeaveContact_leave-contact .LeaveContact_section-button>div {
@@ -133,5 +151,6 @@
 }
 
 .LeaveContact_leave-contact .LeaveContact_form-container>div button[type=submit] {
-  max-width: 250px
+  max-width: 250px;
+  max-height: 42px;
 }

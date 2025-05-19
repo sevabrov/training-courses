@@ -26,7 +26,6 @@
 
 @media(min-width: 993px) {
   .HomeHeader_home-header .HomeHeader_content {
-    margin-top: -140px;
     max-width: 355px
   }
 }
@@ -46,7 +45,12 @@
 
 .HomeHeader_home-header .HomeHeader_content p {
   font-size: var(--font-14);
-  margin-right: 40%;
+}
+
+@media(max-width: 992px) {
+  .HomeHeader_home-header .HomeHeader_content p {
+    margin-right: 46%;
+  }
 }
 
 .HomeHeader_home-header .HomeHeader_content h1 span {
@@ -88,7 +92,7 @@
   width: 170%;
   position: absolute;
   top: -18%;
-  left: 66%;
+  left: 62%;
   pointer-events: none;
   transform: translateX(-50%)
 }
@@ -99,6 +103,7 @@
     max-width: 780px;
     min-width: 410px;
     top: 24%;
+    left: 68%;
   }
 }
 
@@ -122,7 +127,7 @@
 
 @media(max-width: 992px) {
   .HomeHeader_home-header .HomeHeader_bio {
-    margin-top: 350px;
+    margin-top: 280px;
     align-items: center;
     max-width: 580px
   }
