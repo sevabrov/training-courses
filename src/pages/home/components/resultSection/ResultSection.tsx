@@ -2,7 +2,7 @@ import './index.scss';
 
 const ResultSection = () => {
   return (
-    <section className='ForWhom_for-whom'>
+    <section className='Result_section'>
       <div className='container'>
         <header>
           <h2>Що ти отримаєш?</h2>
