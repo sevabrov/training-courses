@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import SuccessPage from 'pages/success/SuccessPage';
 import Policy from 'pages/policy/Policy';
 import Oferta from 'pages/oferta/Oferta';
+import ErrorPage from 'pages/error/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: '/success',
     element: <SuccessPage />,
+  },
+  {
+    path: '/error',
+    element: <ErrorPage />,
   },
   {
     path: '/privacy-policy',
