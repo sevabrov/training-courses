@@ -1,16 +1,9 @@
-import { useState } from 'react';
-import ModalBasic from 'components/modal/Modal';
 import headerImage from 'assets/flowers/header-image.webp';
 import author from 'assets/flowers/author.webp';
 import iconInsta from 'assets/flowers/icon_insta.svg';
 import './index.scss';
 
 const MainSection = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const getPayment = async () => {
-    setModalIsOpen(true);
-  };
 
   return (
     <>
@@ -26,7 +19,7 @@ const MainSection = () => {
                 Цей курс створений для тих, хто хоче раз і назавжди розібратися у догляді за кімнатними рослинами. Без непотрібної та суперечливої інформації з інтернету — лише перевірені дії, які залишаються актуальними завжди.
               </p>
             </div>
-            <button className='btn btn-primary' onClick={getPayment}>
+            <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>
               купити курс
             </button>
           </div>
@@ -100,7 +93,6 @@ const MainSection = () => {
           </div>
         </div>
       </header>
-      <ModalBasic modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
     </>
   );
 };

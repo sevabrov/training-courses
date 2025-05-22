@@ -1,17 +1,10 @@
 import { useState } from 'react';
 import './index.scss';
 import { programData } from './helper';
-import ModalBasic from 'components/modal/Modal';
 import VideoPlayer from './VideoPlayer';
 
 const ProgramSection = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
-
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const getPayment = async () => {
-    setModalIsOpen(true);
-  };
 
   const toggleItems = (index: number) => {
     setActiveIndex(index);
@@ -35,7 +28,7 @@ const ProgramSection = () => {
                 Отримай чітку систему догляду, яка працює завжди.
               </p>
               <hr />
-              <button className='btn btn-primary' onClick={getPayment}>купити курс</button>
+              <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
             </footer>
           </div>
           <ul className='WhatContain_list-items'>
@@ -58,7 +51,6 @@ const ProgramSection = () => {
           </ul>
         </div>
       </section>
-      <ModalBasic modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} />
     </>
   );
 };
