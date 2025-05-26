@@ -67,7 +67,7 @@ const FeedbacSection = () => {
                 </div>
                 <span>
                   <span className='CurseSection_new-price'>
-                    <span>і придбай за </span>
+                    <span>ціна зараз </span>
                     50€
                   </span>
                   <span className='CurseSection_old-price'>

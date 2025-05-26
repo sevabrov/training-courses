@@ -32,7 +32,7 @@ const FooterSection = () => {
 
         <div className='Footer_social'>
           <a
-            href='https://instagram.com/kirgisska'
+            href='https://instagram.com/zeleno_house'
             rel='noopener noreferrer'
             target='_blank'
           >
