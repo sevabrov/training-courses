@@ -1,30 +1,19 @@
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
 
-const SuccessPage = () => {
-  const location = useLocation();
+const TELEGRAM_BOT_URL = "https://t.me/Zeleno_house_bot?start=w40087090";
 
-  // Extract query parameters
-  const queryParams = new URLSearchParams(location.search);
-  const data = queryParams.get('data');
-  const signature = queryParams.get('signature');
+const SuccessPage: React.FC = () => {
+  useEffect(() => {
+    window.location.href = TELEGRAM_BOT_URL;
+  }, []);
 
   return (
-    <div>
-      <h1>Payment Success</h1>
-      {data ? (
-        <>
-          <p>
-            <strong>Data:</strong> {data}
-          </p>
-          <p>
-            <strong>Signature:</strong> {signature}
-          </p>
-        </>
-      ) : (
-        <p>No payment information available.</p>
-      )}
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <h1>Переадресація на Telegram...</h1>
+      <p>Якщо вас не перенаправило автоматично, <a href={TELEGRAM_BOT_URL}>натисніть тут</a>.</p>
     </div>
   );
 };
 
 export default SuccessPage;
+
