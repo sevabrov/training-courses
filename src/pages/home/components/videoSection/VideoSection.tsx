@@ -18,8 +18,7 @@ const VideoSection = () => {
           <YouTubeEmbed videoId="SadldNQD2PY" />
           </div>
           <footer className='call-to-action'>
-            <p>Цей курс — твій персональний ключ до розуміння будь-якої рослини.</p>
-            <hr />
+            <p>Придбавши курс сьогодні, ти отримаєш у подарунок <strong>60 хвилин</strong> особистої консультації — для твоїх конкретних питань і потреб.</p>
             <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
           </footer>
         </div>

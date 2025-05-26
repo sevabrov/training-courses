@@ -25,9 +25,8 @@ const ProgramSection = () => {
             <VideoPlayer />
             <footer className='call-to-action'>
               <p>
-                Отримай чітку систему догляду, яка працює завжди.
+                Лише при купівлі курсу зараз — <strong>індивідуальна годинна консультація в подарунок</strong>. Твої питання — мої відповіді.
               </p>
-              <hr />
               <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
             </footer>
           </div>

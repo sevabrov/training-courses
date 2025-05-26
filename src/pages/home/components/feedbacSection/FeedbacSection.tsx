@@ -57,12 +57,11 @@ const FeedbacSection = () => {
             </picture>
             <div className='CurseSection_copy'>
               <p>
-                Купуй курс вже зараз та отримай годинну персональну консультацію, щоб розвʼязати саме свої запитання.
+                Не відкладай! Купуй курс зараз і отримай <strong>1 годину персональної консультації</strong> — відповіді саме на твої питання.
                 <br />
               </p>
               <div className='CurseSection_action'>
                 <div>
-                  <hr />
                   <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
                 </div>
                 <span>
