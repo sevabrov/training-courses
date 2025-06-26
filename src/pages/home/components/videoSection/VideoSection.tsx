@@ -1,3 +1,5 @@
+
+import { PEYMENT_LINK } from '../../../../constants';
 import './index.scss';
 import YouTubeEmbed from './Video';
 
@@ -19,7 +21,7 @@ const VideoSection = () => {
           </div>
           <footer className='call-to-action'>
             <p>Придбавши курс сьогодні, ти отримаєш у подарунок <strong>60 хвилин</strong> особистої консультації — для твоїх конкретних питань і потреб.</p>
-            <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
+            <button className='btn btn-primary' onClick={() => { window.location.href = PEYMENT_LINK; }}>купити курс</button>
           </footer>
         </div>
       </section>

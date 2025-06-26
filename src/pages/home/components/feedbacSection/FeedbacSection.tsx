@@ -8,6 +8,7 @@ import img5 from 'assets/feedback/5.webp';
 import img6 from 'assets/feedback/6.webp';
 import './index.scss';
 import ImageSlider from './components/ImageSlider';
+import { PEYMENT_LINK } from '../../../../constants';
 
 const images = [img1, img2, img3, img4, img5, img6,]
 
@@ -62,7 +63,7 @@ const FeedbacSection = () => {
               </p>
               <div className='CurseSection_action'>
                 <div>
-                  <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
+                  <button className='btn btn-primary' onClick={() => { window.location.href = PEYMENT_LINK; }}>купити курс</button>
                 </div>
                 <span>
                   <span className='CurseSection_new-price'>

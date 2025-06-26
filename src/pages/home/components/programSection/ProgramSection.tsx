@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './index.scss';
 import { programData } from './helper';
 import VideoPlayer from './VideoPlayer';
+import { PEYMENT_LINK } from '../../../../constants';
 
 const ProgramSection = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -27,7 +28,7 @@ const ProgramSection = () => {
               <p>
                 Лише при купівлі курсу зараз — <strong>індивідуальна годинна консультація в подарунок</strong>. Твої питання — мої відповіді.
               </p>
-              <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>купити курс</button>
+              <button className='btn btn-primary' onClick={() => { window.location.href = PEYMENT_LINK; }}>купити курс</button>
             </footer>
           </div>
           <ul className='WhatContain_list-items'>

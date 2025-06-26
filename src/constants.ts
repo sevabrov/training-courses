@@ -1,0 +1,1 @@
+export const PEYMENT_LINK = 'https://secure.wayforpay.com/button/b610029802bd4';

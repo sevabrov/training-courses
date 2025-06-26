@@ -2,6 +2,7 @@ import headerImage from 'assets/flowers/header-image.webp';
 import author from 'assets/flowers/author.webp';
 import iconInsta from 'assets/flowers/icon_insta.svg';
 import './index.scss';
+import { PEYMENT_LINK } from '../../../../constants';
 
 const MainSection = () => {
 
@@ -20,7 +21,7 @@ const MainSection = () => {
               <p>🌱 Легко розберешся з доглядом — навіть якщо ніколи не мав рослин</p>
               <p>🌱 Твій дім стане зеленим — без зайвих витрат часу і грошей</p>
             </div>
-            <button className='btn btn-primary' onClick={() => { window.location.href = 'https://secure.wayforpay.com/button/b610029802bd4'; }}>
+            <button className='btn btn-primary' onClick={() => { window.location.href = PEYMENT_LINK; }}>
               купити курс
             </button>
           </div>
