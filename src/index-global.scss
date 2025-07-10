@@ -92,7 +92,25 @@ p {
 }
 
 .btn-primary:hover {
-  background: var(--color-primary-darken)
+  background: var(--color-primary-darken);
+}
+
+.banner-content {
+  display: none;
+}
+
+@media(max-width: 992px) {
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 46px 0;
+    font-size: var(--font-24);
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--color-primary);
+  }
 }
 
 * {

@@ -41,6 +41,9 @@ const MainSection = () => {
               />
             </picture>
           </div>
+          <div className='banner-content'>
+            Тільки до кінця серпня при купівлі курсу - 1 година консультації зі мною у ПОДАРУНОК🎁
+          </div>
           <div className='HomeHeader_bio'>
             <picture>
               <img
