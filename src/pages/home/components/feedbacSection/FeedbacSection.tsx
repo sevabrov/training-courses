@@ -58,7 +58,7 @@ const FeedbacSection = () => {
             </picture>
             <div className='CurseSection_copy'>
               <p>
-                Не відкладай! Купуй курс зараз і отримай вебінар <strong>«Як заробляти на озелененні: Все про професію озеленювача»</strong> у подарунок 🎁
+                Не відкладай! Купуй курс зараз і отримай вебінар <strong>«З хобі у дохід: Як заробляти на озелененні»</strong> у подарунок 🎁
                 <br />
               </p>
               <div className='CurseSection_action'>
