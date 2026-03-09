@@ -10,10 +10,9 @@ import './index.scss';
 import ImageSlider from './components/ImageSlider';
 import { PEYMENT_LINK } from '../../../../constants';
 
-const images = [img1, img2, img3, img4, img5, img6,]
+const images = [img1, img2, img3, img4, img5, img6];
 
 const FeedbacSection = () => {
-
   return (
     <>
       <section className='CurseSection_curse-section'>
@@ -40,7 +39,7 @@ const FeedbacSection = () => {
           <div className='CurseSection_content'>
             <ImageSlider images={images} />
           </div>
-          <div className='CurseSection_content' style={{maxWidth: '100%'}}>
+          <div className='CurseSection_content' style={{ maxWidth: '100%' }}>
             <picture className=''>
               <img
                 alt=''
@@ -58,20 +57,29 @@ const FeedbacSection = () => {
             </picture>
             <div className='CurseSection_copy'>
               <p>
-                Не відкладай! Купуй курс зараз і отримай вебінар <strong>«З хобі у дохід: Як заробляти на озелененні»</strong> у подарунок 🎁
+                Не відкладай! Купуй курс зараз і отримай вебінар{' '}
+                <strong>«З хобі у дохід: Як заробляти на озелененні»</strong> у
+                подарунок 🎁
                 <br />
               </p>
               <div className='CurseSection_action'>
                 <div>
-                  <button className='btn btn-primary' onClick={() => { window.location.href = PEYMENT_LINK; }}>купити курс</button>
+                  <button
+                    className='btn btn-primary'
+                    onClick={() => {
+                      window.location.href = PEYMENT_LINK;
+                    }}
+                  >
+                    купити курс
+                  </button>
                 </div>
                 <span>
                   <span className='CurseSection_new-price'>
                     <span>ціна зараз </span>
-                    49€
+                    19€
                   </span>
                   <span className='CurseSection_old-price'>
-                    звичайна ціна: 99€
+                    звичайна ціна: 49€
                   </span>
                 </span>
               </div>
