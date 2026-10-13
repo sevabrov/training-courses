@@ -76,7 +76,7 @@ const FeedbacSection = () => {
                 <span>
                   <span className='CurseSection_new-price'>
                     <span>ціна зараз </span>
-                    19€
+                    9.99€
                   </span>
                   <span className='CurseSection_old-price'>
                     звичайна ціна: 49€
